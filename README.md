@@ -42,10 +42,4 @@ jboolean handleOnClick (JNIEnv* env, jobject thiz, jobject a0, jobject a1, jint 
 
 
 
-:information_source: The complete flow listed above is needed at least once to bundle the GSON library and to complie a few more Java files serving as utilities. Further changes can be introduced by editing the `ghidra_scripts/NativeEnrich.java` directly using Ghidra's Script Manager, and selecting the "Edit script with basic editor" button on the top right
-
-
-
-
-
-==TODO== add blog post URL
+:information_source: The complete flow listed above is needed at least once to bundle the GSON library and populate the Java classes in Ghidra's directories. Further changes to the main file `ghidra_scripts/NativeEnrich.java` can then be made on the fly using Ghidra's Script Manager, and selecting the "Edit script with basic editor" button on the top right
