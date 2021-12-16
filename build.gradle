@@ -1,0 +1,2 @@
+def ghidraInstallDir = project.getProperty("GHIDRA_INSTALL_DIR")
+apply from: new File(ghidraInstallDir).getCanonicalPath() + "/support/buildExtension.gradle"
