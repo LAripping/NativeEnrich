@@ -1,14 +1,15 @@
 # Native Enrich
 
 A Ghidra script to aid reverse engineering of Android native (.so) libraries, by identifying dynamically registered functions within the Code Listing.
+Read the accompanying [blog post](https://laripping.com/blog-posts/2021/12/20/nativeenrich.html) 
 
-In effect: going from this
+This script can take you from this:
 
 ```c++
 void FUN_00905b34 (undefined8 param_1, undefined8 param_2)
 ```
 
-to this
+...to this:
 
 ```c++
 jboolean handleOnClick (JNIEnv* env, jobject thiz, jobject a0, jobject a1, jint a2, jint a3)
